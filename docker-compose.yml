@@ -1,5 +1,7 @@
 services:
   hubs-docs:
     build: .
+    container_name: hubs-docs
+    restart: unless-stopped
     ports:
       - "8080:8080"
